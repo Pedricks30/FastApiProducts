@@ -3,7 +3,7 @@ import pandas as pd
 
 app = FastAPI()
 
-EXCEL_PATH = "E:\VSCodeProjects\mt93-backend\productos.xlsx"
+EXCEL_PATH = "productos.xlsx"
 
 @app.get("/api/products/by-barcode/{barcode}")
 def get_product(barcode: str):
